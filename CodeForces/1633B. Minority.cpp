@@ -40,63 +40,6 @@ int main()
         cin>>n;
         loop(i,n.length())
         {
-            /*
-            if(n[i]=='0')
-            {
-                c_z++;
-                if(c_nz==0)
-                {
-                    minor = 0;
-                }
-                else
-                {
-                    diff_0 = abs(c_z - c_nz);
-                    if(c_z == c_nz && minor==0)
-                    {
-                        minor = 0;
-                    }
-                    else if(c_z > c_nz && diff_0>=minor)
-                    {
-                        minor = c_nz;
-                    }
-                    else if(c_nz > c_z && diff_0>=minor)
-                    {
-                        minor = c_z;
-                    }
-                }
-                //cout<<"For 0 --->  c_z: "<<c_z<<" c_nz: "<<c_nz<<" minor: "<<minor<<endl;
-                //cout<<"diff_0: "<<diff_0<<endl;
-            }
-
-
-            else if(n[i]=='1')
-            {
-                c_nz++;
-                if(c_z==0)
-                {
-                    minor = 0;
-                }
-                else
-                {
-                    diff_1 = abs(c_z - c_nz);
-                    if(c_z == c_nz && minor==0)
-                    {
-                        minor = 0;
-                    }
-                    else if(c_z > c_nz && diff_1>=minor)
-                    {
-                        minor = c_nz;
-                    }
-                    else if(c_nz > c_z && diff_1>=minor)
-                    {
-                        minor = c_z;
-                    }
-                }
-                //cout<<"For 1 --->  c_z: "<<c_z<<" c_nz: "<<c_nz<<" minor: "<<minor<<endl;
-                //cout<<"diff_1: "<<diff_1<<endl;
-
-            }
-            */
             if(n=="1" && n.length()==1)
                 break;
 
