@@ -52,10 +52,8 @@ int main()
 
         if(c_z>c_nz)
             minor = c_nz;
-            //cout<<c_nz<<endl;
         else if(c_z<c_nz)
             minor = c_z;
-            //cout<<c_z<<endl;
 
         else
         {
@@ -71,9 +69,6 @@ int main()
         else if(c_z2<c_nz2)
             minor = c_z2;
         }
-
-
-        //cout<<" --->  c_z: "<<c_z<<" c_nz: "<<c_nz<<" minor: "<<minor<<endl;
 
         cout<<minor<<endl;
 
