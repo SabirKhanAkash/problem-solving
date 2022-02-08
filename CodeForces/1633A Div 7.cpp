@@ -52,16 +52,10 @@ int main()
             char num_charn[999];
             char num_chary[999];
 
-
             i2s(num_charx,arr[x]);
             i2s(num_charn,n);
             i2s(num_chary,arr[y]);
 
-/*
-            cout<<"x: " <<num_charx[0]<<" n: "<<num_charn[0]<<" y: "<<num_chary[0]<<endl;
-            cout<<"x: " <<num_charx[1]<<" n: "<<num_charn[1]<<" y: "<<num_chary[1]<<endl;
-            cout<<"x: " <<num_charx[2]<<" n: "<<num_charn[2]<<" y: "<<num_chary[2]<<endl;
-*/
             loop(i,3)
             {
                 if(num_charn[i]==num_charx[i])
