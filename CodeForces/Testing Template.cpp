@@ -18,13 +18,14 @@ using namespace std;
 #define inf                    9000000000000000
 #define pie                    3.1415926536
 #define pb(a)                  push_back(a)
-#define test                   printf(" <---I'm Here--> ")
+#define test                   printf(" <---I'm Here--> \n")
 #define tc(a)                  while(a--)
 #define nl                     printf("\n")
 #define sorted(a)              sort(a.begin(),a.end())
 #define bsorted(a)             sort(a.begin(),a.end(),greater<ll>())
 #define arrsort(a)              sort(a, a + sizeof(a) / sizeof(a[0]))
 #define arrbsort(a)              sort(a, a + (sizeof(a) / sizeof(a[0])), greater<ll>())
+#define i2s(arr,a)             std::sprintf(arr, "%d", a);
 
 
 int main()
