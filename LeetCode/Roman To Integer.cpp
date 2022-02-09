@@ -30,75 +30,98 @@ using namespace std;
 #define arrbsort(a)            sort(a, a + (sizeof(a) / sizeof(a[0])), greater<ll>())
 #define i2s(arr,a)             std::sprintf(arr, "%d", a);
 
+
 int romanToInt(string s) {
         int i,n=0;
-        loop(i,s.length())
+        for(i=0;i<s.length();)
         {
             if(s[i]=='I')
             {
-                n += 1;
-            }
-
-            if(s[i] == 'X')
-            {
-                n += 10;
-
-                if(s[i-1]=='I')
+                if(s[i+1]=='V')
                 {
-                    n -= 1;
+                    n += 4;
+                    i+=2;
                 }
-            }
 
-            if(s[i] == 'L')
-            {
-                n += 50;
-
-                if(s[i-1]=='X')
+                else if(s[i+1]=='X')
                 {
-                    n -= 10;
+                    n += 9;
+                    i+=2;
                 }
-            }
 
-            if(s[i] == 'C')
-            {
-                n += 100;
-
-                if(s[i-1]=='X')
+                else
                 {
-                    n -= 10;
-                }
-            }
-
-            if(s[i] == 'D')
-            {
-                n += 500;
-
-                if(s[i-1]=='C')
-                {
-                    n -= 100;
-                }
-            }
-
-            if(s[i] == 'M')
-            {
-                n += 1000;
-
-                if(s[i-1]=='C')
-                {
-                    n -= 100;
+                    n += 1;
+                    i++;
                 }
             }
 
             if(s[i]=='V')
             {
-                n = 5;
+                n += 5;
+                i++;
+            }
 
-                if(s[i-1]=='I')
+            if(s[i]=='X')
+            {
+                if(s[i+1]=='L')
                 {
-                    n -= 1;
+                    n += 40;
+                    i+=2;
+                }
+
+                else if(s[i+1]=='C')
+                {
+                    n += 90;
+                    i += 2;
+                }
+
+                else
+                {
+                    n += 10;
+                    i++;
+                }
+
+            }
+
+            if(s[i]=='L')
+            {
+                n += 50;
+                i++;
+            }
+
+            if(s[i]=='C')
+            {
+                if(s[i+1]=='D')
+                {
+                    n += 400;
+                    i+=2;
+                }
+
+                else if(s[i+1]=='M')
+                {
+                    n += 900;
+                    i+=2;
+                }
+
+                else
+                {
+                    n += 100;
+                    i++;
                 }
             }
-            cout<<s<<" : "<<s[i]<<" n : "<<n<<endl;
+
+            if(s[i]=='D')
+            {
+                n += 500;
+                i++;
+            }
+
+            if(s[i]=='M')
+            {
+                n += 1000;
+                i++;
+            }
 
         }
         return n;
@@ -110,7 +133,6 @@ int main()
     cin>>s;
 
     cout<<romanToInt(s);
-
 
     return 0;
 }
