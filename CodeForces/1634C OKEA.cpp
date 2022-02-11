@@ -52,8 +52,6 @@ int main()
         si(n);
         si(k);
 
-        //cout<<"sum: "<<sum<<" k: "<<k<<" sum%k = "<<(sum%k)<<endl;
-
         if(k==1)
         {
             cout<<"YES"<<endl;
