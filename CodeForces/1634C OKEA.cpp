@@ -26,103 +26,52 @@ using namespace std;
 #define arrsort(a)              sort(a, a + sizeof(a) / sizeof(a[0]))
 #define arrbsort(a)              sort(a, a + (sizeof(a) / sizeof(a[0])), greater<ll>())
 
+void printOutput(int n, int k)
+{
+    int nn=0,i,j;
+    FORE(i,1,n)
+    {
+        FORE(j,1,k)
+        {
+            cout<<(i+(n*nn))<<" ";
+            nn++;
+        }
+        nn = 0;
+        cout<<endl;
+    }
+}
+
 int main()
 {
-    int t,n,k,arr[500][500],temp[500][500];
-
-
+    int t,n,k;
     sl(t);
 
     tc(t)
     {
-        int p = 1,flag=0,c,d,i,j;
+        int i,j;
         si(n);
         si(k);
 
-        loop(i,n)
-        {
-            loop(j,k)
-            {
-                arr[i][j] = p;
-                temp[i][j] = p;
-                p++;
-            }
-        }
+        //cout<<"sum: "<<sum<<" k: "<<k<<" sum%k = "<<(sum%k)<<endl;
 
         if(k==1)
         {
-            if(n==1)
-            {
-                cout<<"YES"<<endl;
-                cout<<"1"<<endl;
-            }
-            else {
-                cout<<"YES"<<endl;
-                loop(i,n)
-                {
-                    loop(j,k)
-                    {
-                        cout<<(arr[i][j]);
-                    }
-                    nl;
-                }
-            }
+            cout<<"YES"<<endl;
+            printOutput(n,k);
         }
-
-        else if(n==1 && k>1)
-            cout<<"NO"<<endl;
-
-        else if(k>=1)
+        else
         {
-            loop(i,n)
-            {
-                int sum = 0;
-                loop(j,k)
-                {
-                    sum += arr[i][j];
-                }
-                //cout<<"sum = "<<sum<<endl;
-                if(sum%k != 0)
-                    {
-                        flag = 1;
-                        int x = k - (sum%k);
-                        int f = arr[i][j]+x;
-                        //cout<<"f : "<<f<<" arr[i][k]: "<<arr[i][k-1]<<endl;
-                        loop(c,n)
-                        {
-                            loop(d,k)
-                            {
-                                if(temp[c][d] == f)
-                                {
-                                    int tempo;
-                                    tempo = arr[c][d];
-                                    arr[c][d] = arr[i][j];
-                                    arr[i][k-1] = tempo;
-                                    //cout<<"arr[c][d]: "<<arr[c][d]<<"   "<<"arr[i][k]: "<<arr[i][k-1]<<endl;
-                                }
-                            }
-                        }
-                    }
-                    sum = 0;
-            }
-
-            if(flag==0)
+            if(n%2 !=0 )
                 cout<<"NO"<<endl;
             else
             {
                 cout<<"YES"<<endl;
-                loop(i,n)
-                {
-                    loop(j,k)
-                    {
-                        cout<<(arr[i][j])<<" ";
-                    }
-                    nl;
-                }
+                printOutput(n,k);
             }
-        }
-    }
 
+        }
+
+    }
 
     return 0;
 }
