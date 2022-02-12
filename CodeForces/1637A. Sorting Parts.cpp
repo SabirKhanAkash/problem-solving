@@ -64,7 +64,6 @@ int main()
             if(arr[i] == temp[i])
                 c++;
         }
-        //cout<<" c: "<<c<<" n: "<<n<<endl;
 
         if(c == n)
             cout<<"NO"<<endl;
