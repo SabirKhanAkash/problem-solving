@@ -60,10 +60,7 @@ int main()
         selectionSort(arr, n);
 
         loop(i,n)
-        {
-            if(arr[i] == temp[i])
-                c++;
-        }
+            if(arr[i] == temp[i]) c++;
 
         if(c == n)
             cout<<"NO"<<endl;
