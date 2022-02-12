@@ -61,7 +61,6 @@ int main()
 
         loop(i,n)
         {
-            //cout<<" arr: "<<arr[i]<<" "<<" temp: "<<temp[i]<<" "<<endl;
             if(arr[i] == temp[i])
                 c++;
         }
