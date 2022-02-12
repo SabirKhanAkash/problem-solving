@@ -50,7 +50,7 @@ int main()
     {
         ll n;
         sl(n);
-        ll i,arr[10000],temp[10000],c=0,nn;
+        ll i,arr[10000],temp[10000],c=0;
         loop(i,n)
         {
             sl(arr[i]);
