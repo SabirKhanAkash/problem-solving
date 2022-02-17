@@ -45,10 +45,6 @@ int main()
         FORE(i,1,n)
             si(arr[i]);
 
-        //FORE(i,1,n)
-            //cout<<" checker: "<<(checker[i]);
-        //nl;
-
 
         FORE(i,1,n)
         {
