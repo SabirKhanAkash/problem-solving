@@ -49,8 +49,6 @@ int main()
             //cout<<" checker: "<<(checker[i]);
         //nl;
 
-        //FORE(i,1,n)
-            //cout<<" arr: "<<(arr[i]);
 
         FORE(i,1,n)
         {
