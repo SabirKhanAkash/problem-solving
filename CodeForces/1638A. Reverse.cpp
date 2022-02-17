@@ -66,7 +66,6 @@ int main()
                 }
                 break;
             }
-            //cout<<"pin1: "<<pin<<" pin2: "<<pin2<<endl;
         flag = 0;
         }
 
