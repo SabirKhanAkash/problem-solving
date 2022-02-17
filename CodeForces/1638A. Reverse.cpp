@@ -85,9 +85,7 @@ int main()
                     cout<<res[c]<<" ";
                     if(l<n) c++;
                 }
-
             }
-
         }
         nl;
     }
