@@ -52,7 +52,7 @@ int main()
             {
                 res[c] = arr[i];
                 cout<<res[c]<<" ";
-                //nl;
+
                 if(i<n) c++;
             }
             else if(arr[i] != checker[i])
