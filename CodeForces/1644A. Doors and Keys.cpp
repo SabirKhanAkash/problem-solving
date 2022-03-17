@@ -70,7 +70,6 @@ int main()
                     }
             }
         }
-        //cout<<"pass: "<<pass<<endl;
 
         if(pass == 3)
             cout<<"YES"<<endl;
