@@ -30,7 +30,6 @@ using namespace std;
 
 
 int main()
-
 {
     int t;
     si(t);
@@ -47,7 +46,6 @@ int main()
         {
             if(input[i]=='r' || input[i]=='g' || input[i]=='b')
                 keys.pb(input[i]);
-
             else
             {
                 if(input[i] == 'R')
