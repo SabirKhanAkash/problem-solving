@@ -19,6 +19,7 @@ using namespace std;
 #define pie                    3.1415926536
 #define pb(a)                  push_back(a)
 #define pop(a)                pop_back(a)
+#define in(a)                 insert({a,b})
 #define test                   printf(" <---I'm Here--> ")
 #define tc(a)                  while(a--)
 #define nl                     printf("\n")
