@@ -18,7 +18,7 @@ using namespace std;
 #define inf                    9000000000000000
 #define pie                    3.1415926536
 #define pb(a)                  push_back(a)
-#define pob(a)                pop_back(a)
+#define pop(a)                pop_back(a)
 #define test                   printf(" <---I'm Here--> ")
 #define tc(a)                  while(a--)
 #define nl                     printf("\n")
